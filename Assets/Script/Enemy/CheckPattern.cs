@@ -10,6 +10,8 @@ public class CheckPattern : MonoBehaviour
     private GameObject timeLimit;
     [SerializeField]
     private GameObject doorAnim;
+    [SerializeField]
+    private GameObject stage1Text;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,6 +20,7 @@ public class CheckPattern : MonoBehaviour
             doorAnim.gameObject.SetActive(true);
             Pattern.gameObject.SetActive(true);
             timeLimit.gameObject.SetActive(true);
+            stage1Text.gameObject.SetActive(true);
             Destroy(this.gameObject);
         }
     }

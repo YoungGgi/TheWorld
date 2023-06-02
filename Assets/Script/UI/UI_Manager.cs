@@ -18,6 +18,16 @@ public class UI_Manager : MonoBehaviour
     [SerializeField]
     private Transform endPos;
 
+    [Header("BossHelp")]
+    [SerializeField]
+    private GameObject bossHelp0;
+    [SerializeField]
+    private GameObject bossHelp1;
+    [SerializeField]
+    private GameObject bossHelp2;
+    [SerializeField]
+    private GameObject bossHelp3;
+
     public void GoBattleStage()
     {
         SceneManager.LoadScene(1);
@@ -48,5 +58,10 @@ public class UI_Manager : MonoBehaviour
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
     }
+
+    #region bossHelp
+
+
+    #endregion
 
 }

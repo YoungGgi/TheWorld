@@ -20,13 +20,7 @@ public class UI_Manager : MonoBehaviour
 
     [Header("BossHelp")]
     [SerializeField]
-    private GameObject bossHelp0;
-    [SerializeField]
-    private GameObject bossHelp1;
-    [SerializeField]
-    private GameObject bossHelp2;
-    [SerializeField]
-    private GameObject bossHelp3;
+    private GameObject bossHelpPanel;
 
     public void GoBattleStage()
     {
@@ -59,9 +53,14 @@ public class UI_Manager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    #region bossHelp
+    public void HelpOn()
+    {
+        bossHelpPanel.gameObject.SetActive(true);
+    }
 
-
-    #endregion
+    public void HelpOff()
+    {
+        bossHelpPanel.gameObject.SetActive(false);
+    }
 
 }

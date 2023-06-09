@@ -1362,7 +1362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warnningImg1: {fileID: 1377890983}
   warnningImg2: {fileID: 1219173691}
-  ObstaclePrefab1: {fileID: 613258249994344165, guid: fbe16a31d920e8d46b491bf4454d1b99, type: 3}
+  ObstaclePrefab1: {fileID: 8427230957455267009, guid: abfab9f3de7f6184398852826ede0ca0, type: 3}
   ObstaclePrefab2: {fileID: 8427230957455267009, guid: abfab9f3de7f6184398852826ede0ca0, type: 3}
   spawnPos: {fileID: 690149558}
   spawnPos2: {fileID: 1786503408}
@@ -15041,7 +15041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901221630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.2, y: -4.7, z: 0}
+  m_LocalPosition: {x: 75.2, y: -5.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

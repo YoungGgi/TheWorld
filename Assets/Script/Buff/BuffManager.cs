@@ -19,10 +19,17 @@ public class BuffManager : MonoBehaviour
     {
         playerSkill.PlayerSkill[index] = 1;
         Time.timeScale = 1;
+
+        buffPanel.gameObject.SetActive(false);
+    }
+
+    public void ClickHeal(int index)
+    {
+        playerSkill.PlayerSkill[index] = 1;
+        Time.timeScale = 1;
         if(Buffs.instance.PlayerSkill[0] == 1)
         {
             Instantiate(healPotion, healSpawn.position, Quaternion.identity);
-
         }
 
         buffPanel.gameObject.SetActive(false);

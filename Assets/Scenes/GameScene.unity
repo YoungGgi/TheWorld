@@ -3093,7 +3093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a6905c8112d3f4f82bf5f3ed1f9f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerSkill: 000000000000000000000000000000000000000001000000
+  PlayerSkill: 000000000000000000000000000000000000000000000000
 --- !u!1 &349167777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,7 +6560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896627590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.8, y: -2.92, z: 0}
+  m_LocalPosition: {x: -7.3, y: -2.92, z: 0}
   m_LocalScale: {x: 1.6108199, y: 1.6108199, z: 1.6108199}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9086,7 +9086,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1934122817}
         m_TargetAssemblyTypeName: BuffManager, Assembly-CSharp
-        m_MethodName: ClickBtn
+        m_MethodName: ClickHeal
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15881,7 +15881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989932877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.51999, y: -0.8, z: -10}
+  m_LocalPosition: {x: -1.5800095, y: -0.8, z: -10}
   m_LocalScale: {x: 1.0869565, y: 1.0869565, z: 1.0869565}
   m_Children: []
   m_Father: {fileID: 0}

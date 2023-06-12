@@ -81,7 +81,6 @@ public class UI_Manager : MonoBehaviour
     public void GameQuit()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.ExitPlaymode();
     }
 
 }

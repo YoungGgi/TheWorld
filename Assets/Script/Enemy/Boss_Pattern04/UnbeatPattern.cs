@@ -11,6 +11,12 @@ public class UnbeatPattern : MonoBehaviour
         boss_Pattern04 = GameObject.Find("Pattern04_boss").GetComponent<Boss_Pattern04>();
     }
 
+    private void Update()
+    {
+        if (boss_Pattern04.isfalse)
+            Destroy(this.gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")

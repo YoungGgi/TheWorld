@@ -181,6 +181,21 @@ public class Player : MonoBehaviour
             }
         }
 
+        if(collision.tag == "BuffEnemy")
+        {
+            if(!isNotDamage)
+            {
+                health -= 4;
+            }
+
+            if (health <= 0)
+            {
+                Time.timeScale = 0;
+                GameOverObj.gameObject.SetActive(true);
+            }
+
+        }
+
     }
 
     

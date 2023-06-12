@@ -52,6 +52,7 @@ public class Boss_Pattern04 : MonoBehaviour
     
     [Header("UnbeatCount")]
     public int unbeatCount;                      // 플레이어가 무적 오브젝트 먹은 횟수(5가 되면 보스 패턴 실행 취소)
+    public bool isfalse;                         // 패턴 실패 여부
 
     [Header("BossUI")]
     [SerializeField]
@@ -95,6 +96,7 @@ public class Boss_Pattern04 : MonoBehaviour
         unbeatCount = 0;
         skillTime = 0;
         patternText.gameObject.SetActive(true);
+        isfalse = false;
         StartCoroutine(textSetAcitve());
         StartCoroutine(PatternStart());
     }
@@ -159,6 +161,8 @@ public class Boss_Pattern04 : MonoBehaviour
             if(Boss.instance.HP.value <= 0.5f)
             {
                 halfBossAttack.gameObject.SetActive(true);
+
+                isfalse = true;
 
                 yield return new WaitForSeconds(1f);
 

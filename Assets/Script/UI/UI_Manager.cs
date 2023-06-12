@@ -18,9 +18,14 @@ public class UI_Manager : MonoBehaviour
     [SerializeField]
     private Transform endPos;
 
+    [Header("PlayHelp")]
+    [SerializeField]
+    private GameObject playHelpPanel;
+
     [Header("BossHelp")]
     [SerializeField]
     private GameObject bossHelpPanel;
+
 
     public void GoBattleStage()
     {
@@ -53,6 +58,16 @@ public class UI_Manager : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void playHelpOn()
+    {
+        playHelpPanel.gameObject.SetActive(true);
+    }
+
+    public void playHelpOff()
+    {
+        playHelpPanel.gameObject.SetActive(false);
+    }
+
     public void HelpOn()
     {
         bossHelpPanel.gameObject.SetActive(true);
@@ -61,6 +76,12 @@ public class UI_Manager : MonoBehaviour
     public void HelpOff()
     {
         bossHelpPanel.gameObject.SetActive(false);
+    }
+
+    public void GameQuit()
+    {
+        Application.Quit();
+        UnityEditor.EditorApplication.ExitPlaymode();
     }
 
 }

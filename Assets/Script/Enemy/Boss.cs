@@ -38,16 +38,34 @@ public class Boss : MonoBehaviour
 
     public BossDestroy bossDestroy;
 
+    /*
     private void Start()
     {
         HP.value = currentHp / maxHp;
         bossDestroy = GameObject.Find("DestroyCheck").GetComponent<BossDestroy>();
     }
+    */
+
+    private void OnEnable()
+    {
+        HP.value = currentHp / maxHp;
+        bossDestroy = GameObject.Find("DestroyCheck").GetComponent<BossDestroy>();
+
+        if (Buffs.instance.PlayerSkill[3] == 1)
+        {
+            maxHp = buffMaxHp;
+            currentHp = maxHp;
+        }
+    }
 
     private void Update()
     {
+        /*
         if (Buffs.instance.PlayerSkill[3] == 1)
+        {
             maxHp = buffMaxHp;
+        }
+            
         
         if(Buffs.instance.PlayerSkill[3] == 1)
         {
@@ -57,6 +75,8 @@ public class Boss : MonoBehaviour
         {
             HP.value = Mathf.Lerp(HP.value, currentHp / maxHp, Time.deltaTime * 5f);
         }
+        */
+        HP.value = Mathf.Lerp(HP.value, currentHp / maxHp, Time.deltaTime * 5f);
 
     }
 

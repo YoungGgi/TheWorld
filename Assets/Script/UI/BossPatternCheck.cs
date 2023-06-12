@@ -5,6 +5,8 @@ using UnityEngine;
 public class BossPatternCheck : MonoBehaviour
 {
     [SerializeField]
+    private GameObject boss;
+    [SerializeField]
     private GameObject bossPattern;
     [SerializeField]
     private GameObject bossHp;
@@ -17,6 +19,7 @@ public class BossPatternCheck : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            boss.SetActive(true);
             doorAnim.gameObject.SetActive(true);
             LeanTween.move(bossHp, bossHpSpawnPos, 1.0f);
             bossPattern.gameObject.SetActive(true);
